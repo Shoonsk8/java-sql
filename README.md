@@ -30,10 +30,12 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 ### find the phone number for the supplier with the id 11. Should be (010) 9984510.
 > This can be done with SELECT and WHERE clauses
 
-### SELECT 	Phone FROM Suppliers where SupplierID	=11;
+> ### SELECT 	Phone FROM Suppliers where SupplierID	=11;
 
 ### list orders descending by the order date. The order with date 1997-02-12 should be at the top.
 > This can be done with SELECT, WHERE, and ORDER BY clauses
+
+### SELECT * FROM Orders order by OrderDate DESC;
 
 ### find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name. Returns 11 records.
 > This can be done with SELECT and WHERE clauses
