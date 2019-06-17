@@ -19,16 +19,18 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 ### find all customers that live in London. Returns 6 records.
 > This can be done with SELECT and WHERE clauses
 
-###SELECT * FROM Customers where City='London';
+### SELECT * FROM Customers where City='London';
 
 ### find all customers with postal code 1010. Returns 3 customers.
 > This can be done with SELECT and WHERE clauses
 
-###SELECT * FROM Customers where PostalCode='1010';
+### SELECT * FROM Customers where PostalCode='1010';
 
 
 ### find the phone number for the supplier with the id 11. Should be (010) 9984510.
 > This can be done with SELECT and WHERE clauses
+
+### SELECT 	Phone FROM Suppliers where SupplierID	=11;
 
 ### list orders descending by the order date. The order with date 1997-02-12 should be at the top.
 > This can be done with SELECT, WHERE, and ORDER BY clauses
