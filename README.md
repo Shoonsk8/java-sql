@@ -80,21 +80,18 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 
 ### list orders grouped by customer showing the number of orders per customer. _Rattlesnake Canyon Grocery_ should have 7 orders.
 > This can be done with SELECT, COUNT, JOIN and GROUP BY clauses. Your count should focus on a field in the Orders table, not the Customer table
+> There is more information about the COUNT clause on [W3 Schools](https://www.w3schools.com/sql/sql_count_avg_sum.asp)
+
 ```diff
 + SELECT Orders.CustomerID, Customers.CustomerName, COUNT(Orders.CustomerID) as NumberOfOrder FROM Orders LEFT JOIN Customers ON Orders.CustomerID=Customers.CustomerID GROUP BY Orders.CustomerID, Customers.CustomerName ;
-```
-
-
-> There is more information about the COUNT clause on [W3 Schools](https://www.w3schools.com/sql/sql_count_avg_sum.asp)
-```diff
-+ 
 ```
 
 
 ### list customers names and the number of orders per customer. Sort the list by number of orders in descending order. _Ernst Handel_ should be at the top with 10 orders followed by _QUICK-Stop_, _Rattlesnake Canyon Grocery_ and _Wartian Herkku_ with 7 orders each.
 > This can be done by adding an ORDER BY clause to the previous answer
 ```diff
-+ 
++ SELECT Orders.CustomerID, Customers.CustomerName, COUNT(Orders.CustomerID) as NumberOfOrder  FROM Orders LEFT JOIN Customers ON Orders.CustomerID=Customers.CustomerID GROUP BY Orders.CustomerID, Customers.CustomerName  ORDER BY COUNT(Orders.CustomerID) DESC ;
+
 ```
 
 
