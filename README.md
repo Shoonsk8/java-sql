@@ -64,7 +64,8 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 ### add a customer record for _"The Shire"_, the contact name is _"Bilbo Baggins"_ the address is _"1 Hobbit-Hole"_ in _"Bag End"_, postal code _"111"_ and the country is _"Middle Earth"_.
 > This can be done with the INSERT INTO clause
 ```diff
-+ 
++ insert into Customers ( "CustomerName","ContactName",	 "Address",        "City",	"PostalCode",	"Country")
++values               ( "The Shire", "Bilbo Baggins", "1 Hobbit-Hole" , "Bag End",  "111",  "Middle Earth")
 ```
 
 
