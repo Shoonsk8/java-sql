@@ -81,7 +81,7 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 ### list orders grouped by customer showing the number of orders per customer. _Rattlesnake Canyon Grocery_ should have 7 orders.
 > This can be done with SELECT, COUNT, JOIN and GROUP BY clauses. Your count should focus on a field in the Orders table, not the Customer table
 ```diff
-+ SELECT Orders.CustomerID, Customers.CustomerName FROM Orders LEFT JOIN Customers ON Orders.CustomerID=Customers.CustomerID ORDER BY Orders.CustomerID;
++ SELECT Orders.CustomerID, Customers.CustomerName, COUNT(Orders.CustomerID) as NumberOfOrder FROM Orders LEFT JOIN Customers ON Orders.CustomerID=Customers.CustomerID GROUP BY Orders.CustomerID, Customers.CustomerName ;
 ```
 
 
