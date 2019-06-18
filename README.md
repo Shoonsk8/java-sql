@@ -84,6 +84,7 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 
 ```diff
 + SELECT Orders.CustomerID, Customers.CustomerName, COUNT(Orders.CustomerID) as NumberOfOrder FROM Orders LEFT JOIN Customers ON Orders.CustomerID=Customers.CustomerID GROUP BY Orders.CustomerID, Customers.CustomerName ;
++ SELECT o.CustomerID, c.CustomerName, COUNT(o.CustomerID) as NumberOfOrder FROM Orders o LEFT JOIN Customers c ON o.CustomerID=c.CustomerID GROUP BY o.CustomerID, c.CustomerName  ORDER BY COUNT(o.CustomerID) DESC ;
 ```
 
 
