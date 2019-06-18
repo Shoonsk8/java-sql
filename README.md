@@ -28,8 +28,9 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 ### find all customers with postal code 1010. Returns 3 customers.
 > This can be done with SELECT and WHERE clauses
 
+```diff
 ### SELECT * FROM Customers where PostalCode='1010';
-
+```
 
 ### find the phone number for the supplier with the id 11. Should be (010) 9984510.
 > This can be done with SELECT and WHERE clauses
@@ -72,7 +73,10 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 > This is done with a DELETE query
 
 > In the WHERE clause, you can provide another list with an IN keyword this list can be the result of another SELECT query. Write a query to return a list of CustomerIDs that meet the criteria above. Pass that to the IN keyword of the WHERE clause as the list of IDs to be deleted
- 
+ ```diff
++ this will be highlighted in green
+- this will be highlighted in red
+```
 > Use a LEFT JOIN to join the Orders table onto the Customers table and check for a NULL value in the OrderID column
 
 ## Create Database and Table
