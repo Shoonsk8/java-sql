@@ -73,7 +73,7 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 ### update _Bilbo Baggins_ record so that the postal code changes to _"11122"_.
 > This can be done with UPDATE and WHERE clauses
 ```diff
-+ 
++ UPDATE Customers SET PostalCode	 = "11122" WHERE "CustomerName" ="Bilbo Baggins";
 ```
 
 ### list orders grouped by customer showing the number of orders per customer. _Rattlesnake Canyon Grocery_ should have 7 orders.
