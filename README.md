@@ -1,13 +1,18 @@
+```diff
++ this will be highlighted in green
+- this will be highlighted in red
+```
+
 # java-sql
 
-A student that completes this project shows that they can:
++ A student that completes this project shows that they can:
 * Query data from a single table
 * Query data from multiple tables
 * Create a new datadaase using PostgreSQL
 
 # Introduction
 
-Working with SQL
+- Working with SQL
 
 # Instructions
 
