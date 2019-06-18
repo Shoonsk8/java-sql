@@ -57,7 +57,7 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 > Don't forget the wildcard '%' symbols at the beginning and end of your substring to denote it can appear anywhere in the string in question
 
 ```diff
-+ 
++ SELECT * FROM Customers where CustomerName LIKE "%MARKET%";
 ```
 
 
