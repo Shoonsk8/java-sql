@@ -48,7 +48,7 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 > This can be done with SELECT and WHERE clauses
 
 ```diff
-+ 
++ SELECT SupplierName FROM Suppliers where LEN(SupplierName)>20;
 ```
 
 ### find all customers that include the word "market" in the name. Should return 4 records.
