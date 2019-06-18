@@ -1,6 +1,8 @@
 
 
 # java-sql
+<style>p{color:red;}</style>
+<p><em>foo</em></p>
 
 + A student that completes this project shows that they can:
 * Query data from a single table
