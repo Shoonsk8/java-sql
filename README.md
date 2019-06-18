@@ -99,7 +99,7 @@ Answer the following data queries. Keep track of the SQL you write by pasting it
 ### list orders grouped by customer's city showing number of orders per city. Returns 58 Records with _Aachen_ showing 2 orders and _Albuquerque_ showing 7 orders.
 > This is very similar to the previous two queries, however, it focuses on the City rather than the CustomerName
 ```diff
-+ 
++ SELECT  c.City ,  COUNT(o.CustomerID) as NumberOfOrder FROM Orders o LEFT JOIN Customers c ON o.CustomerID=c.CustomerID GROUP BY c.City   ORDER BY COUNT(o.CustomerID) DESC ;
 ```
 
 ## Stretch Goals
